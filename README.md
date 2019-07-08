@@ -41,7 +41,7 @@ To deploy public folder to **gh-pages** brunch
 
 ## Version
 
-v.001
+v.1.0.0
 
 ## Author
 

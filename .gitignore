@@ -1,5 +1,6 @@
-# VSC history
+# VSC history / OS
 .history
+.DS_Store
 
 # Node
 node_modules/

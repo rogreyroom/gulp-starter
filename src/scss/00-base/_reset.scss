@@ -51,6 +51,25 @@ pre {
 }
 
 /**
+* PWA setup (R.A.)
+* 1. Disable interactive elements on Safari for iOS as they are dimmed when you touch them.
+* 2. Disable default long press callouts as you may've defined a custom behaviour for a long press in PWA
+* 3. Disable text selection on UI elements such as buttons and controls.
+* 4. When using overflow: auto, iOS Safari will be scrolling it shabby and awful. 
+*    Set overflow to scroll and use this on every scrollable element: 
+*    -webkit-overflow-scrolling: touch;
+*/
+
+body {
+   -webkit-tap-highlight-color: transparent; /* 1 */
+   -webkit-touch-callout: none;              /* 2 - disable it for content websites */
+}
+
+button {
+   user-select: none; /* 3 */
+}
+
+/**
  * Setup headings font size with rem units. (R.A.)
  */
 

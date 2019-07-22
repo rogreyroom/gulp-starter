@@ -33,15 +33,15 @@ To deploy public folder to **gh-pages** brunch
 
 ```git
 > git checkout gh-pages
-> git checkout [master/feature-branch] -- 'public/**'
 > git rm -f -r --ignore-unmatch ./**
+> git checkout [master/feature-branch] -- 'public/**'
 > git mv -f public/** ./
 > git commit . -m "build: website deploy `date +\"%Y-%m-%d\"`"
 ```
 
 ## Version
 
-v.1.0.0
+v.1.0.1
 
 ## Author
 
